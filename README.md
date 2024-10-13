@@ -2,7 +2,7 @@
 
 This Python project addresses the **Job-Shop Scheduling Problem (JSSP)**, a complex optimization challenge widely recognized in production and manufacturing environments. The JSSP involves scheduling a set of jobs across multiple machines, where each job comprises various operations that must be performed in a specific sequence. Each operation has a fixed duration and must monopolize a particular machine during its processing time.
 
-The primary goal of the JSSP is to **minimize the makespan**, which represents the total time required to complete all jobs. This project explores various formulations and methodologies to tackle the JSSP, aiming to optimize scheduling and resource allocation.
+The primary goal of the JSSP is to **minimize the makespan**, which represents the total time required to complete all jobs. This project explores various formulations and methodologies to tackle the JSSP, aiming to optimize scheduling and resource allocation. The instances used for testing have been obtained from the following source: [InstancesJSSP](https://www.eii.uva.es/elena/JSSP/InstancesJSSP.htm)
 
 ## Organization of the Data in the Input Files
 
@@ -27,7 +27,7 @@ The input files for the JSSP solver follow a specific structure:
 
 The **Shortest Processing Time (SPT)** rule prioritizes jobs with the shortest remaining processing time on their next machine. Although the optimal makespan could not be achieved for all test instances, approximations were made for some cases, such as the `la05` and `mt06` input files. It's important to note that some input instances lack an optimal makespan value for comparison.
 
-The code includes a version of the SPT that provides a **Gantt chart** to visually represent the resulting job schedules. This Gantt chart allows users to easily visualize how jobs are distributed across machines, providing a clear representation of the results.
+The code includes a version of the SPT that provides a **Gantt chart** to visually represent the resulting job schedules. This Gantt chart allows users to easily visualize how jobs are distributed across machines, providing a clear representation of the results. Additionally, thanks to the resulting console output, the results obtained can be verified `[start_time, end_time, job.id, machine_index]`.
 
 ### Shifting Bottleneck Heuristic
 
